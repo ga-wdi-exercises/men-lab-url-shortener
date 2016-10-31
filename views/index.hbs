@@ -13,8 +13,8 @@
   <tr>
     <td><a href="{{this.short}}">{{ this.short }}</a></td>
     <td><a href="{{this.long}}">{{ this.long }}</a></td>
-    <td></td>
-    <td></td>
+    <td><a href="/urls/{{this._id}}/edit">Edit</a></td>
+    <td><a href="/urls/{{this._id}}?_method=DELETE">Delete</a></td>
   </tr>
   {{/each}}
 </table>

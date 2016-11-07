@@ -1,4 +1,4 @@
-var mongoose = require("./connection.js")
+var mongoose = require("./connection.js").mongoose
 
 //list the attributes of Url
 var UrlSchema = mongoose.Schema({
@@ -8,8 +8,8 @@ var UrlSchema = mongoose.Schema({
 })
 
 //define the Url model
-mongoose.model("Url", UrlSchema)
+// var url = mongoose.model("Url", UrlSchema)
 
 module.exports = {
-  Url
+  Url: mongoose.model("Url", UrlSchema),
 }

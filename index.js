@@ -29,10 +29,21 @@ app.get("/", (req, res) => {
 
 app.post("/", (req, res) => {
   let longUrl = req.body.url.long
-  let checksum = require("checksum")
-  let short = checksum(longUrl).substr(0,5)
+  let short = ""
+  if (req.body.url.short) {
+    short = req.body.url.short
+  } else {
+    let checksum = require("checksum")
+    short = checksum(longUrl).substr(0,5)
+  }
   Url.create({long: longUrl, short: short}).then(url => {
     res.redirect(302, "/")
+  }).catch(err => {
+    console.error(err);
+    res.render("urls-index", {
+      urls,
+      err
+    })
   })
 })
 

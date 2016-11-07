@@ -2,6 +2,7 @@ var express = require("express")
 var mongoose     = require("./db/connection");
 var hbs     = require("express-handlebars");
 var Url = mongoose.model("Url")
+var parser = require("body-parser")
 
 
 var app = express();
@@ -16,6 +17,7 @@ app.engine(".hbs", hbs({
 }));
 
 app.use("/assets", express.static("public"));
+app.use(parser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
   Url.find({}).then(urls => {

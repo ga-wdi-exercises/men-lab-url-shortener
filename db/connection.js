@@ -1,0 +1,4 @@
+// import mongoose
+var mongoose = require("mongoose")
+
+module.exports = mongoose

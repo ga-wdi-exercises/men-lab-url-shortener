@@ -2,11 +2,11 @@ var Url = require("./models")
 
 let seedData = [{
   short: "goo.gl",
-  long: "google.com"
+  long: "http://google.com"
 },
 {
   short: "ti.mf",
-  long: "timfoley.me"
+  long: "http://timfoley.me"
 }]
 
 Url.remove({}).then(_ => {

@@ -1,0 +1,13 @@
+<h2>Add a URL</h3>
+<form class="new-url" action="/" method="post">
+  <input type="text" name="url[long]" placeholder="Long URL">
+  <button type="submit" name="save">Save</button>
+</form>
+
+<h2>URLs</h2>
+{{#each urls}}
+<div class="url">
+  <p>Long: <a href="{{long}}">{{long}}</a></p>
+  <p>Short: <a href="http://localhost:3001/{{short}}">http://localhost:3001/{{short}}</a></p>
+</div>
+{{/each}}

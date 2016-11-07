@@ -4,6 +4,10 @@
   "description": "A URL shortener with Mongo and Express",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "checksum": "^0.1.1",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
     "mongoose": "^4.6.6"
   },
   "devDependencies": {},

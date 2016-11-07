@@ -2,6 +2,6 @@ var Url = require("./models");
 
 
 
-Url.create({short: "http://short.com", long: "http://verylongaddress.com/stuff.html", timestamp: Date.now() }).then(url => {
+Url.create({short: "http://espn.com", long: "http://espnlongaddress.com/sports.html", timestamp: Date.now() }).then(url => {
   console.log(url)
 })

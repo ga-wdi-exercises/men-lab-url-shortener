@@ -1,0 +1,17 @@
+[
+  {
+    "long": "https://github.com/nickoki/men-lab-url-shortener/blob/solution/db/connection.js",
+    "short": "123",
+    "timestamp": "2016-11-07 10:10:10"
+  },
+  {
+    "long": "https://github.com/nickoki/men-lab-url-shortener/blob/solution/db/models.js",
+    "short": "456",
+    "timestamp": "2016-11-07 10:10:10"
+  },
+  {
+    "long": "https://github.com/nickoki/men-lab-url-shortener/blob/solution/db/seeds.js",
+    "short": "789",
+    "timestamp": "2016-11-07 10:10:10"
+  },
+]

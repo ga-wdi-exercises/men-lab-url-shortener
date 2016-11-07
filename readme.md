@@ -51,6 +51,21 @@ This file should:
 Create a `POST` route for creating new Urls. When a Url is created, redirect
 to that Url's show page.
 
+When creating a Url, you can use the [checksum module](https://www.npmjs.com/package/checksum) to generate
+the short url.
+
+Here's a demo:
+
+```
+$ npm install --save checksum
+```
+
+```js
+var checksum = require("checksum")
+checksum("areallylongstring") // '8419ef571ef6d28c9a9e820e70c2defd23b7d948'
+checksum("areallylongstring").substr(0,5) // '8419e'
+```
+
 Remember to:
 
 - create a route for the show page

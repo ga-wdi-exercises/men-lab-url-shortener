@@ -1,7 +1,6 @@
 // db/seeds.js
 
 var mongoose = require("./connection")
-var models = require("./models")
 
 var Url = mongoose.model("Url")
 

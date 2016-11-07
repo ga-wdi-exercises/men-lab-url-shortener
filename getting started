@@ -1,0 +1,11 @@
+to install
+npm install --save mongoose
+
+to install express:
+npm install --save express
+
+to install node:
+npm init -y
+
+to install nodemon:
+npm install -g nodemon

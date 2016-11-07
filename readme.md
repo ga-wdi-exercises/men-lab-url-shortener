@@ -1,4 +1,4 @@
-`# MEN Lab: URL Shortener
+# MEN Lab: URL Shortener
 
 Have you ever wondered how URL shorteners work? In today's lab, you'll build your own
 bit.ly clone.

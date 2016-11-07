@@ -1,1 +1,18 @@
-<h1>yo</h1>
+<h2>Shorten a URL</h2>
+<form action="/urls" method="post">
+  <input type="text" name="urls[long]" placeholder="URL"/>
+  <button type="submit">Shorten</button>
+</form>
+
+{{#unless urls}}
+  <h2>No URLs shortened</h2>
+{{else}}
+  <h4>{{urls.length}} URLs shortened</h4>
+  {{#each urls as |url index|}}
+  <div class="url-card">
+    <a href="{{url.short}}" class="short-url">{{url.short}}</a>
+    <small>Shortened from:</small>
+    <span class="long-url">{{url.long}}</span>
+  </div>
+  {{/each}}
+{{/unless}}

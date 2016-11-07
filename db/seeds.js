@@ -8,13 +8,13 @@ var Url = mongoose.model("Url")
 var seedData = [
   {
     "short": "e3j9z",
-    "long": "longlonglonglong"
+    "long": "http://www.google.com"
   }, {
     "short": "fwsa1",
-    "long": "anotherlongurl"
+    "long": "http://www.reddit.com"
   }, {
     "short": "as1fo",
-    "long": "thisurlissooolongman"
+    "long": "http://www.youtube.com"
   }
 ]
 

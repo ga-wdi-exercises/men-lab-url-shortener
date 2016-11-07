@@ -1,0 +1,14 @@
+[
+  {
+    "short": "abc",
+    "long": "https://github.com/ga-wdi-exercises/whenpresident/blob/master/db/seeds.json"
+  },
+  {
+    "short": "def",
+    "long": "https://github.com/lizafloyd/men-lab-url-shortener"
+  },
+  {
+    "short": "ghi",
+    "long": "https://docs.mongodb.com/v3.2/reference/bson-types/"
+  }
+]

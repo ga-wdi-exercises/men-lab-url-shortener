@@ -1,0 +1,27 @@
+{
+  "name": "men-lab-url-shortener",
+  "version": "1.0.0",
+  "description": "Have you ever wondered how URL shorteners work? In today's lab, you'll build your own bit.ly clone.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "hbs": "^4.0.1",
+    "mongoose": "^4.6.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizafloyd/men-lab-url-shortener.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lizafloyd/men-lab-url-shortener/issues"
+  },
+  "homepage": "https://github.com/lizafloyd/men-lab-url-shortener#readme"
+}

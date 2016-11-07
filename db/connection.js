@@ -1,5 +1,5 @@
 var mongoose = require("mongoose")
-mongoose.connect("mongodb://localhost/urlshortner")
+
 var UrlSchema = new mongoose.Schema(
   {
     short: String,
@@ -8,5 +8,6 @@ var UrlSchema = new mongoose.Schema(
   }
 )
 mongoose.model("Url", UrlSchema)
+mongoose.connect("mongodb://localhost/urlshortener")
 
 module.exports = mongoose

@@ -1,4 +1,10 @@
 var mongoose = require("./connection")
 var seedData = require("./seed")
+var Url = mongoose.model("Url")
 
-process.exit()
+
+Url.remove({}).then(() => {
+  Url.collection.insert(seedData).then(() => {
+    process.exit()
+  })
+})

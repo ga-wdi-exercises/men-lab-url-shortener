@@ -19,6 +19,7 @@
   "homepage": "https://github.com/marlungu/men-lab-url-shortener#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "checksum": "^0.1.1",
     "express": "^4.14.0",
     "hbs": "^4.0.1",
     "mongoose": "^4.6.6"

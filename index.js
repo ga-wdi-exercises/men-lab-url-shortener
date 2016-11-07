@@ -3,6 +3,8 @@ var mongoose     = require("./db/connection");
 var hbs     = require("express-handlebars");
 var Url = mongoose.model("Url")
 var parser = require("body-parser")
+var checksum = require("checksum")
+
 
 
 var app = express();
@@ -25,6 +27,13 @@ app.get("/", function(req, res){
   })
 })
 
+app.post("/urls", (req, res) => {
+  Url.create({
+    long: req.body.long,
+    short: checksum(req.body.long).substr(0, 5)}).then(url => {
+    res.redirect(`/urls/${url._id}`)
+  })
+})
 app.listen(app.get("port"), function(){
   console.log("It's online!");
 });

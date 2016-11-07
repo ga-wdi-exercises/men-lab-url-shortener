@@ -1,0 +1,18 @@
+[
+  {
+    "short": "http://XYZ@short.cc",
+    "long": "http://localhost:3000/portfolios/3",
+    "timestamp": 1478550591547
+  },
+  {
+    "short": "http://X12@short.cc",
+    "long": "http://localhost:3000/mylong URL/45/name/3",
+    "timestamp": 1478550591547
+  },
+  {
+    "short": "http://XddZ@short.cc",
+    "long": "http://localhost:3000/Superlongurltitle/3443/3",
+    "timestamp": 1478550591547
+  }
+
+]

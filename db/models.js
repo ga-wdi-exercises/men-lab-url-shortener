@@ -12,4 +12,5 @@ mongoose.Promise = global.Promise
 
 mongoose.model("Url", urlSchema)
 
+mongoose.connect("mongodb://localhost/shorturl")
 module.exports = mongoose

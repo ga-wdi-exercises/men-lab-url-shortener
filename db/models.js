@@ -9,6 +9,4 @@ mongoose.Promise = global.Promise
 
 // mongoose.connect("mongodb://localhost/urlshortener")
 
-mongoose.model("Url", UrlSchema)
-
-module.exports = mongoose
+module.exports = mongoose.model("Url", UrlSchema)

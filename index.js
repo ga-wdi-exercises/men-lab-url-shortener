@@ -17,14 +17,18 @@ app.engine(".hbs", hbs({
   layoutsDir:     "views/",
   defaultLayout:  "layout-main"
 }));
-
 app.use("/assets", express.static("public"));
+app.use(parser.json())
 app.use(parser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
   Url.find({}).then(urls => {
     res.render("index", {urls});
   })
+})
+
+app.get("/new", (req, res) => {
+  res.render("new")
 })
 
 app.post("/urls", (req, res) => {

@@ -1,11 +1,18 @@
+to install node:
+npm init -y
+
 to install
 npm install --save mongoose
 
 to install express:
 npm install --save express
 
-to install node:
-npm init -y
-
 to install nodemon:
 npm install -g nodemon
+
+to check the database cmd:
+mongo
+show dbs
+use *databasename*
+show collections
+urls.find()

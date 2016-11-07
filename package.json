@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/marlungu/men-lab-url-shortener#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "hbs": "^4.0.1",
+    "mongoose": "^4.6.6"
   }
 }

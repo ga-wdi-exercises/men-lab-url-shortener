@@ -1,5 +1,8 @@
 var express = require("express")
 var mongoose     = require("./db/connection");
+var hbs     = require("express-handlebars");
+var Url = mongoose.model("Url")
+
 
 var app = express();
 
@@ -15,8 +18,10 @@ app.engine(".hbs", hbs({
 app.use("/assets", express.static("public"));
 
 app.get("/", function(req, res){
-  res.render("app-welcome");
-});
+  Url.find({}).then(urls => {
+    res.render("index", {urls});
+  })
+})
 
 app.listen(app.get("port"), function(){
   console.log("It's online!");

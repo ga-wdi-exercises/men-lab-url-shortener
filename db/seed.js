@@ -1,8 +1,17 @@
 var mongoose = require("./connection")
 var seedData = require("./seeds")
 var Url=  require("./models")
+console.log("seed data",seedData)
 Url.remove({}).then(_ => {
-  Url.collection.insert(seedData)
-.then( _=> process.exit() )
+  console.log("Insert data")
+  Url.collection.insert(seedData, (err ,data) => {
+    console.log(" after then")
+    if (err){console.log(err)}
+    else {
+      console.log(data)
+    }
+    process.exit()
+    }
+  )
 
-}).catch (err => console.log(err) )
+})

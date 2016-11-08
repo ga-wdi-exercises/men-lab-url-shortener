@@ -1,17 +1,17 @@
 [
   {
-    "short": "http://XYZ@short.cc",
-    "long": "http://localhost:3000/portfolios/3",
+    "short": "http://short-for-yahoo-@short.cc",
+    "long": "http://www.yahoo.com",
     "timestamp": 1478550591547
   },
   {
-    "short": "http://X12@short.cc",
-    "long": "http://localhost:3000/mylong URL/45/name/3",
+    "short": "http://short-for-google.cc",
+    "long": "http://www.google.com",
     "timestamp": 1478550591547
   },
   {
-    "short": "http://XddZ@short.cc",
-    "long": "http://localhost:3000/Superlongurltitle/3443/3",
+    "short": "http://short-4-msnbc.cc",
+    "long": "http://msnbc.com",
     "timestamp": 1478550591547
   }
 

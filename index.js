@@ -29,7 +29,7 @@ app.get("/urls", function(req, res){
   Url.find({}).then(urls=>{
     console.log(urls.length)
     for (i=0;i<urls.length;i++) {
-      console.log(urls.short,urls.long)
+      console.log(urls[i].short,urls[i].long)
     }
 
     res.render("url-index", {

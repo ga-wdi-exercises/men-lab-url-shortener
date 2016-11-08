@@ -10,6 +10,6 @@ var UrlSchema = new mongoose.Schema(
 
   var Url = mongoose.model("Url",UrlSchema);
   mongoose.Promise=global.Promise  // for promises to work due to mongoose bug
-  mongoose.connect("mongodb://localhost/Url");
+  mongoose.connect("mongodb://localhost/urlshort");
 
   module.exports=Url

@@ -1,6 +1,6 @@
 <h2>{{urls.length}} urls</h2>
 {{#each urls as |urlindex|}}
 <h3>
-  <a href="/urls/{{url.short}}">{{url.short}} </a>
+  <a href="/urls/{{urlindex.short}}">{{urlindex.short}} </a>
 </h3>
 {{/each}}
